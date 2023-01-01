@@ -181,7 +181,7 @@ func (s *State) PersistState(schemas *terraform.Schemas) error {
 				return fmt.Errorf("failed to generate initial lineage: %v", err)
 			}
 			s.lineage = lineage
-			s.serial = 0
+			s.serial = 1
 		}
 	}
 
